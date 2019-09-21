@@ -1,0 +1,75 @@
+/* HAMBURER BUTTON */
+
+#menu {
+	visibility: hidden;
+}
+
+
+/* hiding the checkbox */
+
+
+/* hamburger */
+
+label {
+	width: 50px;
+	height: 7px;
+	border-radius: 5px;
+	background: #fff;
+	cursor: pointer;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	position: absolute;
+    top: 33px;
+    left: 97%;
+	margin-left: -50px;
+	margin-top: -7.5px;
+}
+
+label:before {
+	content: "";
+	width: 50px;
+	height: 7px;
+	background: #fff;
+	position: absolute;
+	transform: translateY(-15px);
+	-webkit-transform: translateY(-15px);
+	border-radius: 5px;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	-moz-transform: translateY(-15px);
+	-ms-transform: translateY(-15px);
+	-o-transform: translateY(-15px);
+}
+
+label:after {
+	content: "";
+	width: 50px;
+	height: 7px;
+	background: #fff;
+	position: absolute;
+	transform: translateY(15px);
+	-webkit-transform: translateY(15px);
+	border-radius: 5px;
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	-o-transform: translateY(15px);
+}
+
+
+/* animation when checked */
+
+#menu:checked+label {
+	width: 0px;
+}
+
+#menu:checked+label:before {
+	transform: rotate(45deg) translate(0px);
+	-webkit-transform: rotate(45deg) translate(0px);
+}
+
+#menu:checked+label:after {
+	transform: rotate(-45deg) translate(0px);
+	-webkit-transform: rotate(-45deg) translate(0px);
+}

@@ -1,0 +1,77 @@
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@media screen and (max-width: 1200px)
+    .container
+        width: 970px
+
+// ≥992px
+@media screen and (max-width: 992px)
+    .container
+        width: auto
+        
+    
+    // HEADER
+    body
+        header 
+            .top-line
+                background-color: rgba(8, 26, 62, 0.5)
+                .hamburger
+                    display: block
+                .container
+                    height: 60px 
+                .logo
+                    img
+                        height: 40px             
+                nav
+                    display: none
+        .header-text
+            margin-left: 20px
+            margin-top: 350px
+            padding-right: 20px    
+    .hamburger
+        display: block
+    
+    // DESIGN SECTION
+    .design 
+        .mobile-bg
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            background-image: url(../img/monitor.png)
+            background-repeat: no-repeat
+            background-position: 600px 0
+            opacity: 0.05
+        .container
+            flex-direction: column
+            align-items: center
+            .design-pic
+                display: none
+
+
+// ≥768px
+@media screen and (max-width: 768px)
+    // HEADER
+    body
+        header             
+            .header-text
+                margin-top: 200px
+
+// ≥576px
+// @media screen and (max-width:576px)
+
+
+// /*==========  Mobile First  ==========*/
+
+// // ≤576px
+// +media-breakpoint-up(sm)
+
+// // ≤768px
+// +media-breakpoint-up(md)
+
+// // ≤992px
+// +media-breakpoint-up(lg)
+
+// // ≤1200px
+// +media-breakpoint-up(xl)
